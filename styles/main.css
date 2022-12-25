@@ -1,0 +1,41 @@
+.container {
+    max-width: 1200px;
+    height: 800px;
+    background-color: bisque;
+    margin: 0 auto;
+    margin-top: 15px;
+    border: 10px solid #31e0c9;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.container > div {
+    max-width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    background-color: chartreuse;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .container > div {
+        top: 0px;
+        right: 0px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container > div {
+        bottom: 0px;;
+        height: 250px;
+        max-width: 100%;
+        top: unset;
+    }
+}
